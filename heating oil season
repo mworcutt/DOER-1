@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+  <title>Highcharts Cloud</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans%20Pro:400italic,400,700italic,700">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500|Roboto:500" rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/static/images/favicon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/static/images/favicon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/static/images/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/static/images/favicon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/static/images/favicon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/static/images/favicon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/static/images/favicon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/static/images/favicon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicon/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/static/images/favicon/favicon-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/static/images/favicon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/static/images/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/static/images/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/static/images/favicon/favicon-32x32.png" sizes="32x32">
+  
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  
+  <script src="https://code.highcharts.com/stock/highstock.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+  <script src="https://code.highcharts.com/modules/data.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/funnel.js"></script>
+  <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+  <script src="https://code.highcharts.com/6.0.2/modules/annotations.js"></script>
+  <!-- <script src="https://code.highcharts.com/modules/series-label.js"></script> -->
+    
+  <!-- Temproary until HC doesn't rely on it -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.18.2/codemirror.min.js'></script>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.18.2/codemirror.min.css' type="text/css" rel="stylesheet"></link>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.18.2/theme/neo.min.css' type="text/css" rel="stylesheet"></link>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.18.2/mode/javascript/javascript.min.js'></script> 
+  
+  <script src="/config.js"></script>
+  <script>
+
+      dataLayer = [{
+        'pageCategory': 'main-cloud-page'
+      }];
+
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-5XPQ95Q');
+
+      ga('create', 'UA-2995052-8', 'highcharts.com');
+      ga('set', 'forceSSL', true);
+      ga('set', 'displayFeaturesTask', null);
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+
+      if (window) {
+        window.gaOptout = function() {
+          function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            var expires = "expires="+ d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+          }
+
+          function del_cookie(name) {
+            setCookie(name, 'value', 0);
+          } 
+
+          del_cookie('_ga');
+          del_cookie('_gid');
+          location.reload();
+        }
+      }
+  </script>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XPQ95Q"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="app"></div>
+
+<script>
+  var showNewCloud = localStorage.getItem('showNewCloud'),
+      scriptTag = document.createElement('script');
+  
+  if (showNewCloud) scriptTag.src = '/highcharts.cloud.v0.0.1.dist.js';
+  else scriptTag.src = '/old.highcharts.cloud.v0.0.1.dist.js';
+  
+  document.body.appendChild(scriptTag);
+</script>
+
+</body>
+</html>
