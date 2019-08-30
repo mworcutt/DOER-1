@@ -1,0 +1,46 @@
+<html>
+<head>
+
+<title>rggi-proceeds.html</title>
+</head>
+    
+<body>
+
+<div id="highcharts-34d63698-4ccf-4ede-847d-4161c829ccf3"></div><script>
+(function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/stock/modules/annotations-advanced.js","https://code.highcharts.com/stock/modules/stock-tools.js","https://code.highcharts.com/modules/accessibility.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"title":{"text":"Massachusetts RGGI Investments by Category","style":{"fontFamily":"Default","color":"#333333","fontSize":"18px","fontWeight":"bold","fontStyle":"normal"}},"subtitle":{"text":"2017","style":{"fontFamily":"Default","color":"#666666","fontSize":"14px","fontWeight":"bold","fontStyle":"normal"}},"exporting":{},"chart":{"type":"pie","options3d":{"enabled":true,"alpha":45,"beta":0},"polar":false},"plotOptions":{"pie":{"allowPointSelect":true,"depth":35,"cursor":"pointer","showInLegend":true,"dataLabels":{"enabled":false}},"series":{"animation":false}},"series":[{"turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"type":"pie","colorByPoint":true}],"legend":{"itemStyle":{"fontFamily":"Default","color":"#212121","fontSize":"12px","fontWeight":"bold","fontStyle":"normal","cursor":"pointer"},"borderColor":"#212121","verticalAlign":"top","floating":false,"align":"center"},"yAxis":[{"title":{"style":{"fontFamily":"Default","color":"#666666","fontSize":"18px","fontWeight":"normal","fontStyle":"normal"}},"type":"category"}],"stockTools":{"gui":{"buttons":["simpleShapes","lines","crookedLines"],"enabled":false}},"navigation":{"bindingsClassName":"tools-container","events":{"showPopup":"function(e){this.chart.indicatorsPopupContainer||(this.chart.indicatorsPopupContainer=document.getElementsByClassName(\"highcharts-popup-indicators\")[0]),this.chart.annotationsPopupContainer||(this.chart.annotationsPopupContainer=document.getElementsByClassName(\"highcharts-popup-annotations\")[0]),\"indicators\"===e.formType?this.chart.indicatorsPopupContainer.style.display=\"block\":\"annotation-toolbar\"===e.formType&&(this.chart.activeButton||(this.chart.currentAnnotation=e.annotation,this.chart.annotationsPopupContainer.style.display=\"block\")),this.popup&&(c=this.popup)}","closePopup":"function(){this.chart.annotationsPopupContainer.style.display=\"none\",this.chart.currentAnnotation=null}","selectButton":"function(e){var t=e.button.className+\" highcharts-active\";e.button.classList.contains(\"highcharts-active\")||(e.button.className=t,this.chart.activeButton=e.button)}","deselectButton":"function(e){e.button.classList.remove(\"highcharts-active\"),this.chart.activeButton=null}"}},"pane":{"background":[]},"responsive":{"rules":[]},"data":{"csv":"\"Category\";\"Percentage\"\n\"Energy Efficiency\";73.1\n\"Clean & Renewable Energy\";0.1\n\"GHG Abatement\";16.1\n\"Administration\";1.8\n\"RGGI Inc. \";8.8","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false,"seriesMapping":[{"x":0,"y":1}]},"annotations":[]};/*
+// Sample of extending options:
+Highcharts.merge(true, options, {
+    chart: {
+        backgroundColor: "#bada55"
+    },
+    plotOptions: {
+        series: {
+            cursor: "pointer",
+            events: {
+                click: function(event) {
+                    alert(this.name + " clicked\n" +
+                          "Alt: " + event.altKey + "\n" +
+                          "Control: " + event.ctrlKey + "\n" +
+                          "Shift: " + event.shiftKey + "\n");
+                }
+            }
+        }
+    }
+});
+*/new Highcharts.Chart("highcharts-34d63698-4ccf-4ede-847d-4161c829ccf3", options);}}})();
+</script>
+    
+</body>
+</html>
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
